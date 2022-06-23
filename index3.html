@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript002</title>
+</head>
+<body>
+
+    <h1>Ejercicio de JavaScript 002</h1>
+
+    <button type="button" id="boton" onclick="myFunction()">Tirar dado</button>
+
+    <div class="fondo">
+        <img id="a" src="imagen/dado1.png" alt="dado">
+        <img id="b" src="imagen/dado2.png" alt="dado">
+        <img id="c" src="imagen/dado3.png" alt="dado">
+        <img id="d" src="imagen/dado4.png" alt="dado">
+        <img id="e" src="imagen/dado5.png" alt="dado">
+    </div>
+
+    <script>
+        function myFunction() {
+            numero = parseInt(Math.random()*6) + 1
+            document.getElementById("a").src = "imagen/dado" + numero + ".png"
+            numero = parseInt(Math.random()*6) + 1
+            document.getElementById("b").src = "imagen/dado" + numero + ".png"
+            numero = parseInt(Math.random()*6) + 1
+            document.getElementById("c").src = "imagen/dado" + numero + ".png"
+            numero = parseInt(Math.random()*6) + 1
+            document.getElementById("d").src = "imagen/dado" + numero + ".png"
+            numero = parseInt(Math.random()*6) + 1
+            document.getElementById("e").src = "imagen/dado" + numero + ".png"
+        }
+    </script>
+
+    <style>
+        .fondo {
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: yellow;
+        }
+
+        #boton {
+            background-color: black;
+            color: aqua;   
+            font-size: medium;
+        }
+    </style>
+
+</body>
+</html>
